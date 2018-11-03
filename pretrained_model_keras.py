@@ -10,7 +10,7 @@ model_vgg16_conv = VGG16(weights='imagenet', include_top=False)
 model_vgg16_conv.summary()
 
 #Create your own input format (here 3x200x200)
-input = Input(shape=(3,200,200),name = 'image_input')
+input = Input(shape=(150,150,3),name = 'image_input')
 
 #Use the generated model 
 output_vgg16_conv = model_vgg16_conv(input)
