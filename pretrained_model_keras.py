@@ -9,7 +9,7 @@ import numpy as np
 model_vgg16_conv = VGG16(weights='imagenet', include_top=False)
 model_vgg16_conv.summary()
 
-#Create your own input format (here 3x200x200)
+#Create your own input format (here 150x150x3)
 input = Input(shape=(150,150,3),name = 'image_input')
 
 #Use the generated model 
